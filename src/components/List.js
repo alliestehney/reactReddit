@@ -9,8 +9,8 @@ class List extends Component {
 			<article>
 				<section>
 					<div className="PostItem">
-						<img src={this.props.post.thumbnail} alt={this.props.post.thumbnail}/>
-						<h4 className="PostTitle">{this.props.post.title}</h4>
+						<img src={this.props.post.data.thumbnail} alt={this.props.post.data.thumbnail}/>
+						<h4 className="PostTitle">{this.props.post.data.title}</h4>
 					</div>
 				</section>
 			</article>

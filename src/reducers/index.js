@@ -1,9 +1,20 @@
-import data from '../reddit-data';
-
 const INITIAL_STATE = {
 	posts: []
 }
 
-export default function(state=INITIAL_STATE) {
-	return state;
+export default function(state=INITIAL_STATE, action) {
+	switch(action.type) {
+		case "REQUEST_POSTS":
+			return Object.assign({}, state, {
+				posts: []
+			});
+
+		case "RECEIVE_POSTS":
+			return Object.assign({}, state, {
+				posts: action.posts
+			});
+
+		default:
+			return state;
+	}
 }
