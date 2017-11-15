@@ -9,13 +9,16 @@ class Grid extends Component {
 
 			<div>
 				<div className="GridPostItem">
-					<img src={this.props.post.thumbnail} alt={this.props.post.thumbnail}/>
+					<img src={this.props.post.data.thumbnail} alt={this.props.post.data.thumbnail}/>
 				</div>
 			</div>
 
 		);
 	}
 }
+
+
+// <p className="OverlayTitle">{this.props.post.data.title}</p>
 
 function mapStateToProps(state) {
 	return {

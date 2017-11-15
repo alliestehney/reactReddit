@@ -27,10 +27,15 @@ class App extends Component {
     return (
     	<Router>
 		      <div className="App">
-			      	<h1>Awww Reddit Posts</h1>
-			      	<Link to="/list">List View</Link>
-			      	<Link to="/grid">Grid View</Link>
-		    
+		      		<nav className="Top">
+				      	<h1>Awww Reddit Posts</h1>
+				      	<div className="ListLink">
+				      		<Link to="/list">List View</Link>
+				      	</div>
+				      	<div className="GridLink">
+				      		<Link to="/grid" className="GridLink">Grid View</Link>
+				      	</div>
+		    		</nav>
 
 			      <Switch>
 			      		<Route path="/list" render={() => (

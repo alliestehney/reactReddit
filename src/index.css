@@ -29,3 +29,35 @@ body {
 .GridPostItem {
 	margin: 5px 10px;
 }
+
+.Top {
+	display: flex;
+}
+
+.ListLink {
+	margin-left: 64%;
+	margin-top: 1.95%;
+	margin-right: 1%;
+	text-decoration: none;
+}
+
+.ListLink a:hover {
+	color: #D3D3D3;
+}
+
+.ListLink a {
+	text-decoration: none;
+}
+
+.GridLink {
+	margin-top: 2%;
+	text-decoration: none;
+}
+
+.GridLink:hover {
+	color: #D3D3D3;
+}
+
+.OverlayTitle {
+	font-size: 1%;
+}
